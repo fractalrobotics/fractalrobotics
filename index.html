@@ -52,6 +52,39 @@
       font-size: 0.9rem;
       color: #888;
     }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      nav {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+
+      .hero {
+        padding: 40px 15px;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      footer {
+        font-size: 0.8rem;
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,3 +110,4 @@
   </footer>
 </body>
 </html>
+
