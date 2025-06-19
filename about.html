@@ -76,6 +76,9 @@
       font-size: 1.1rem;
       line-height: 1.6;
     }
+    .about-text h1 {
+      margin-top: 0; /* align top of heading with image */
+    }
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -102,14 +105,16 @@
         text-align: center;
       }
       .about-text {
-        margin-top: 20px;
+        margin-top: 5px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="./images/fractal_robotics_logo.png" alt="Fractal Robotics Logo" class="logo" />
+    <a href="index.html">
+      <img src="./images/fractal_robotics_logo.png" alt="Fractal Robotics Logo" class="logo" />
+    </a>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
