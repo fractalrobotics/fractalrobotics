@@ -55,34 +55,25 @@
     @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 20px;
       }
 
+      .logo {
+        margin-bottom: 10px;
+      }
+
       nav {
-        margin-top: 10px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; /* space between links */
         width: 100%;
       }
 
       nav a {
-        margin: 10px 0;
+        margin: 0;
         font-size: 1rem;
-      }
-
-      .hero {
-        padding: 40px 15px;
-      }
-
-      .hero p {
-        font-size: 1rem;
-        padding: 0 10px;
-      }
-
-      footer {
-        font-size: 0.8rem;
-        padding: 15px;
       }
     }
   </style>
