@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Fractal Robotics</title>
+  <title>Printer - Fractal Robotics</title>
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
   <style>
     body {
@@ -52,7 +52,7 @@
       font-size: 0.9rem;
       color: #888;
     }
-    .about-container {
+    .printer-container {
       display: flex;
       align-items: flex-start;
       max-width: 1200px;
@@ -62,7 +62,7 @@
       flex-wrap: wrap;
     }
 
-    .about-image img {
+    .printer-image img {
       width: 200px;
       height: auto;
       border-radius: 8px;
@@ -70,13 +70,13 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .about-text {
+    .printer-text {
       flex: 1;
       min-width: 300px;
       font-size: 1.1rem;
       line-height: 1.6;
     }
-    .about-text h1 {
+    .printer-text h1 {
       margin-top: 0; /* align top of heading with image */
     }
     @media (max-width: 768px) {
@@ -99,12 +99,12 @@
         margin: 0;
         font-size: 1rem;
       }
-      .about-container {
+      .printer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
-      .about-text {
+      .printer-text {
         margin-top: 0px;
       }
     }
@@ -126,44 +126,33 @@
 
 
 <main>
-  <div class="about-container">
-    <div class="about-image">
-      <img src="images/Dan_Brogan.jpg" alt="Dan Brogan" />
+  <div class="printer-container">
+    <div class="printer-image">
+      <img src="images/alpha_unit.jpg" alt="Alpha Unit" />
     </div>
-    <div class="about-text">
-      <h1>About</h1>
+    <div class="printer-text">
+      <h1>Fractal 5 Pro</h1>
       <p>
-        Hi, my name is Dan Brogan, and I founded Fractal Robotics in 2022 with the vision <b>to accelerate the development of mechanical 
-        solutions</b>. In support of that vision, I focused my efforts towards making advanced additive manufacturing technologies more accessible.
+        The Fractal 5 Pro is an open source benchtop multidirectional 5-axis 3D printer.
       </p>
       <p>
-        This whole project started by observing the gap between the limitations of 3-axis FDM and the inaccessibility of current 
-        5-axis FDM technologies. 3-axis FDM limits part strength due to unidirectional layer stacking, making parts vulnerable to forces 
-        applied along the layer lines, while necessitating support structures for overhangs that increase material waste and risk damaging 
-        the part during removal. 5-Axis FDM addresses these issues by reoirienting the in-process part to print in multiple directions; however, 
-        options for existing 5-Axis slicer applications are limited and most commercially available 5-Axis 3D printers are huge and expensive.
+        <b>Design Features</b>
       </p>
       <p>
-        These observations prompted an investigation into the needs of 3D printing practitioners across different industries. The insights from 
-        this process helped inform and focus the design of an accessible product package (hardware & software) that addressed the shortfalls of 
-        3-axis FDM while still being easy to use. I developed the Fractal Cortex 5-axis multidirectional slicer and the Fractal 5 Pro 
-        multidirectional 5-axis 3D printer.
+        <ul>
+          <li>Compatible with <b>Slicer</b></li>
+          <li>CoreXY Motion System</li>
+          <li>Direct Drive</li>
+          <li>Heated Build Plate</li>
+          <li>Fully Enclosed</li>
+          <li>300mm Diameter X 250mm Build Height</li>
+          <li>Auto Bed Leveling</li>
+          <li>Rigid 30x30mm Aluminum Extrusions</li>
+          <li>Backwards Compatible with 3-Axis FDM</li>
+        </ul>
       </p>
       <p>
-      I have taken this project as far as possible with internal resources and have decided the best course of action is to release both the 
-      Fractal Cortex slicer and designs for the Fractal 5 Pro under an open source license so that others can learn from, build upon, 
-      and contribute to it.
-      </p>
-      <p>
-        Open sourcing this project allows me to stay true to the original vision of Fractal Robotics. By sharing my work, I hope to 
-        support researchers, developers, educators, and makers exploring similar ideas.
-      </p>
-      <p>
-        I'm excited to see where others take this work next.
-      </p>
-      <p>
-        While I am officially the only member of Fractal Robotics, I would not have made it this far without the help of family, friends, 
-        and mentors from the Rhode Island startup community. Thank you to everyone who helped me along the way.
+        For more information and access to the design, visit <a href="index.html">the Fractal 5 Pro Github repository.</a>
       </p>
     </div>
   </div>
