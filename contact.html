@@ -12,7 +12,6 @@
       background-color: #ffffff;
       color: #333;
     }
-
     header {
       position: sticky;
       top: 0;
@@ -25,11 +24,9 @@
       border-bottom: 1px solid #e0e0e0;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
-
     .logo {
       height: 70px;
     }
-
     nav a {
       margin-left: 30px;
       text-decoration: none;
@@ -37,11 +34,12 @@
       font-weight: bold;
       transition: color 0.2s;
     }
-
     nav a:hover {
       color: #00fa9a;
     }
-
+    nav a.active {
+      color: #40E0D0;
+    }
     main {
       display: flex;
       flex-direction: column;
@@ -51,40 +49,33 @@
       gap: 20px;
       font-size: 1.2rem;
     }
-
     main h1 {
       margin: 0;
       font-size: 2rem;
     }
-
     main a {
       color: #40E0D0;
       text-decoration: none;
       font-weight: bold;
     }
-
     main a:hover {
       text-decoration: underline;
     }
-
     footer {
       padding: 20px;
       text-align: center;
       font-size: 0.9rem;
       color: #888;
     }
-
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: center;
         padding: 20px;
       }
-
       .logo {
         margin-bottom: 10px;
       }
-
       nav {
         display: flex;
         justify-content: center;
@@ -92,7 +83,6 @@
         gap: 20px;
         width: 100%;
       }
-
       nav a {
         margin: 0;
         font-size: 1rem;
@@ -110,7 +100,7 @@
       <a href="https://fractalrobotics.com/about.html">About</a>
       <a href="https://fractalrobotics.com/fractal-cortex.html">Fractal Cortex</a>
       <a href="https://fractalrobotics.com/fractal-5-pro.html">Fractal 5 Pro</a>
-      <a href="https://fractalrobotics.com/contact.html">Contact</a>
+      <a href="https://fractalrobotics.com/contact.html" class="active">Contact</a>
     </nav>
   </header>
 
