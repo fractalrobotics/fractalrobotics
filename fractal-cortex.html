@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Fractal Robotics</title>
+  <title>Slicer - Fractal Robotics</title>
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
   <style>
     body {
@@ -52,32 +52,49 @@
       font-size: 0.9rem;
       color: #888;
     }
-    .about-container {
+    .slicer-container {
       display: flex;
       align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
       padding: 10px 10px;
       gap: 40px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
-    .about-image img {
-      width: 200px;
+    .slicer-image img {
+      width: 400px;
       height: auto;
       border-radius: 8px;
       object-fit: cover;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .about-text {
+    .slicer-text {
       flex: 1;
       min-width: 300px;
       font-size: 1.1rem;
       line-height: 1.6;
     }
-    .about-text h1 {
+    .slicer-text h1 {
       margin-top: 0; /* align top of heading with image */
+    }
+    .github-link-image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .github-link-image img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .github-link-image img:hover {
+      transform: scale(1.05);
     }
     @media (max-width: 768px) {
       header {
@@ -99,12 +116,12 @@
         margin: 0;
         font-size: 1rem;
       }
-      .about-container {
+      .slicer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
-      .about-text {
+      .slicer-text {
         margin-top: 0px;
         text-align: left;
       }
@@ -127,46 +144,36 @@
 
 
 <main>
-  <div class="about-container">
-    <div class="about-image">
-      <img src="images/Dan_Brogan.jpg" alt="Dan Brogan" />
+  <div class="slicer-container">
+    <div class="slicer-image">
+      <img src="images/slicer.PNG" alt="Fractal Cortex" />
     </div>
-    <div class="about-text">
-      <h1>About</h1>
+    <div class="slicer-text">
+      <h1>Fractal Cortex</h1>
       <p>
-        Hi, my name is Dan Brogan, and I founded Fractal Robotics in 2022 with the vision <b>to accelerate the development of mechanical 
-        solutions</b>. In support of that vision, I focused my efforts towards making advanced additive manufacturing technologies more accessible.
+        Fractal Cortex is an open-source multidirectional 5-axis slicer application.
       </p>
       <p>
-        This whole project started by observing the gap between the limitations of 3-axis FDM and the inaccessibility of current 
-        5-axis FDM technologies. 3-axis FDM limits part strength due to unidirectional layer stacking, making parts vulnerable to forces 
-        applied along the layer lines, while necessitating support structures for overhangs that increase material waste and risk damaging 
-        the part during removal. 5-Axis FDM addresses these issues by reoirienting the in-process part to print in multiple directions; however, 
-        options for existing 5-Axis slicer applications are limited and most commercially available 5-Axis 3D printers are huge and expensive.
+        <b>Capabilities</b>
       </p>
       <p>
-        These observations prompted an investigation into the needs of 3D printing practitioners across different industries. The insights from 
-        dozens of customer interviews helped inform and focus the design of an accessible product package (hardware & software) that addressed 
-        the shortfalls of 3-axis FDM while still being easy to use. The result was the development of the Fractal Cortex slicer and the 
-        Fractal 5 Pro printer.
+        <ul>
+          <li>Compatible with the <b>Fractal 5 Pro</b></li>
+          <li>Intuitive user interface</li>
+          <li>Slice parts in multiple different directions for control over strength and reduced/eliminated support material</li>
+          <li>Collision prevention between <b>print bed/nozzle</b> and <b>in-process part/nozzle</b></li>
+          <li>Backwards Compatible with 3-Axis FDM</li>
+        </ul>
       </p>
       <p>
-        I have taken this project as far as possible with internal resources and have decided the best course of action is to release both the 
-        Fractal Cortex slicer and designs for the Fractal 5 Pro under an open source license so that others can learn from, build upon, 
-        and contribute to it.
-      </p>
-      <p>
-        Open sourcing this project allows me to stay true to the original vision of Fractal Robotics. By sharing my work, I hope to 
-        support researchers, developers, educators, and makers exploring similar ideas.
-      </p>
-      <p>
-        I'm excited to see where others take this work next.
-      </p>
-      <p>
-        While I am officially the only member of Fractal Robotics, I would not have made it this far without the help of family, friends, 
-        and mentors from the Rhode Island startup community. Thank you to everyone who helped me along the way.
+        To download Fractal Cortex, visit the Github repository by clicking the button below.
       </p>
     </div>
+  </div>
+  <div class="github-link-image">
+    <a href="index.html">
+      <img src="images/fractal_cortex_github.png" alt="Fractal Cortex GitHub Link" />
+    </a>
   </div>
 </main>
 
