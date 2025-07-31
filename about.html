@@ -55,19 +55,20 @@
     }
     .about-container {
       display: flex;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 10px 10px;
-      gap: 40px;
-      flex-wrap: wrap;
+      flex-direction: column; /* Stack vertically */
+      align-items: center;     /* Center everything horizontally */
+      text-align: left;
+      max-width: 100%;
+      padding: 20px;
     }
     .about-image img {
-      width: 700px;
+      width: 80%;              /* Responsive width */
+      max-width: 500px;        /* Optional: prevent it from getting too big */
       height: auto;
       border-radius: 8px;
       object-fit: cover;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
     }
     .about-text {
       flex: 1;
@@ -139,7 +140,7 @@
       <p>
         This whole project started by observing the gap between the limitations of 3-axis FDM and the inaccessibility of current 5-axis FDM 
         technologies. 3-axis FDM necessitates support structures for overhangs that increase material waste, print time, and risk 
-        damaging the part during removal. Another downside of 3-axis FDM is that part strength is limited due to unidirectional layer stacking, 
+        damaging the part during removal. Another downside of 3-axis FDM is that part strength is limited due to planar layer deposition, 
         making parts more vulnerable to shear forces applied along the layer lines. Non-planar 5-axis FDM addresses both of these issues by 
         modifying the surface of each layer to follow the contour of the model's shape; however, advanced CAM softwares and steep learning curves 
         are typically required to take full advantage of this additive manufacturing method. Multidirectional 5-axis FDM is an alternative method 
