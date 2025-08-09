@@ -67,6 +67,22 @@
       font-size: 0.9rem;
       color: #888;
     }
+    .github-link-image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    .github-link-image img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .github-link-image img:hover {
+      transform: scale(1.05);
+    }
     @media (max-width: 768px) {
       header {
         flex-direction: column;
